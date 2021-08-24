@@ -1,6 +1,21 @@
+import { useContext } from "react";
+import robotCounterContext from "../Contexts/robotCounterContext.jsx"
+
 export default function RobotGenerator() {
+    const robotCounter = useContext(robotCounterContext)
+    const [robotCount,setRobotCount] = robotCounter
+   
+    function createRobots(){
+        setRobotCount(robotCount+1)
+    }
+
 
     return (
-        <button onClick="">Create Robot</button>
+        <div className="robotGeneratorWrapper">
+            <button onClick={createRobots}>Create Robot</button>
+            <div>{robotCount}</div>
+        </div>
     )
+
+
 };
