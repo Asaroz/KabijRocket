@@ -1,8 +1,14 @@
 import React from "react";
+import Map from "./Components/Map";
+import Store from "./Components/Store";
+import "./Styles/App.scss"
 
 
 export default function App(){
-    return <div>
-        hello hello
+    return <div className="gameWrapper">
+        <Map>
+        </Map>
+        <Store>
+        </Store>
     </div>
 }
