@@ -1,4 +1,7 @@
 .Store {
     border: 3px solid red;
     height: 100vh;
+    background-color: lightblue;
+    box-sizing: border-box;
+    z-index: 2;
 }
