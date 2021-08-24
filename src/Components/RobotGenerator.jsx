@@ -13,7 +13,7 @@ export default function RobotGenerator() {
     return (
         <div className="robotGeneratorWrapper">
             <button onClick={createRobots}>Create Robot</button>
-            <div>{robotCount}</div>
+            <div>Robots: {robotCount}</div>
         </div>
     )
 

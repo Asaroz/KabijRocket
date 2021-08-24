@@ -7,7 +7,7 @@ const initialState = {
     robotsPerSec: 4,
     imagePrinted: null, 
     amount: 2,
-    costs: 
+    
 
 
   };
