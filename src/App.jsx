@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Map from "./Components/Map";
 import Store from "./Components/Store";
 import "./Styles/App.scss"
