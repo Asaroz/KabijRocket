@@ -4,4 +4,10 @@
     background-color: lightblue;
     box-sizing: border-box;
     z-index: 2;
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }

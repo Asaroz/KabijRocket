@@ -1,5 +1,5 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 
-const robotCounterContext = React.createContext(0)
+const robotCounterContext = React.createContext()
 
 export default robotCounterContext
