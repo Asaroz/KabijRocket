@@ -22,9 +22,10 @@
     .Planet{
         height: 200%;
         width:  200%;
-        background-color: red;
+        // background-color: red;
+        background: linear-gradient(to left, #ed213a, #93291e);
         position: fixed;
-        border-radius: 50%;
+        border-radius: 60%;
         z-index: 0;
         top: 200px;
         right: 50px;

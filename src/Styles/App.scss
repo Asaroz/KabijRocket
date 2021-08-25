@@ -2,11 +2,23 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    // darksky
+    background-image: url("../resources/dennis-rochel-BewQ-RbULP4-unsplash.jpg");
+    background-size: cover;
+
+    //bluesky
+    // background-image: url("../resources/dave-hoefler-ELXbHhzVFO0-unsplash.jpg");
+    // background-size: cover;
+
+    // redsky
+    // background-image: url("../resources/vivek-doshi-obsBswnv7FI-unsplash.jpg");
+    // background-size: cover;
 }
 
 .gameWrapper {
     display: grid;
-    grid-template-columns: 17.8fr 7fr;
+    grid-template-columns: 17.8fr 5fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: "Map Store";
