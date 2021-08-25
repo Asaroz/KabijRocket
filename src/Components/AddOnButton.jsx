@@ -16,7 +16,6 @@ export default  function AddOnButton() {
          amount: 2,
          count: 0,
          cost: null,
-         cat: 0,
     
        };
       
@@ -24,59 +23,58 @@ export default  function AddOnButton() {
          switch (action.type) {
            case 'WATER_INCREMENT':
              return {
-                // robotsPerSec: 4,
-                // imagePrinted: null, 
-                // amount: 2,
-                clickcount: 0,
-                // cost: 0,
-                // cat: 0,
+                robotsPerSec: 4,
+                imagePrinted: null, 
+                amount: 2,
+                count: 0,
+                cost: null,
              };
       
      
            case 'VEGETATION_INCREMENT':
              return {
-                clickcount: state. clickcount + 1
+              count: state.count + 20
              };
            
         
 
            case 'HOUSING_INCREMENT':
                return {
-                clickcount: state. clickcount + 1
+                count: state.count + 20
             };
 
 
            case 'DINOS_INCREMENT':
            return {
-            clickcount: state. clickcount + 1
+            count: state.count + 20
            };
               
            
   
            case 'ENERGY_INCREMENT':
                return {
-                clickcount: state. clickcount + 1
+                count: state.count + 20
                };
             
            
   
            case 'FACTORY_INCREMENT':
                return {
-                clickcount: state. clickcount + 1
+                count: state.count + 20
                };
              
            
   
            case 'FARMING_INCREMENT':
                return {
-                clickcount: state. clickcount + 1
+                count: state.count + 20
                };
            
            
   
            case 'MINING_INCREMENT':
                return {
-                clickcount: state. clickcount + 1
+                count: state.count + 20
                };
              default:
              return state;
@@ -85,8 +83,8 @@ export default  function AddOnButton() {
     const [state, dispatch] = useReducer(reducer, initialState);
     return (
       <div>
-         
-        <button onClick={() => dispatch({type: 'WATER_INCREMENT'})} className="water btn"><h2>WATER</h2><h1>{state.clickcount}</h1></button>
+         <h1> Count: {state.count}</h1>
+        <button onClick={() => dispatch({type: 'WATER_INCREMENT'})} className="water btn"><h2>WATER</h2></button>
         <button onClick={() => dispatch({type: 'VEGETATION_INCREMENT'})} className="veg btn"><h2>VEGETATION</h2></button>
         <button onClick={() => dispatch({type: 'HOUSING_INCREMENT'})} className="housing btn"><h2>HOUSING</h2></button>
         <button onClick={() => dispatch({type: 'DINOS_INCREMENT'})} className="dinos btn"><h2>DINOS</h2></button>
