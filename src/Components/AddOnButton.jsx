@@ -11,29 +11,33 @@ export default  function AddOnButton() {
     
     //  rpsCounter = rpsCounter + amount *robotspersecond
     const initialState = {
-         robotsPerSec: 4,
-         imagePrinted: null, 
-         amount: 2,
-         count: 0,
-         cost: null,
-    
+
+        water: {
+           count: 0, 
+        },
+        veg: {
+           count:0,
+         },
        };
       
      const reducer = (state, action) => {
          switch (action.type) {
            case 'WATER_INCREMENT':
-             return {
-                robotsPerSec: 4,
-                imagePrinted: null, 
-                amount: 2,
-                count: 0,
-                cost: null,
-             };
-      
+            const test = {
+                 ...state,
+                water: {
+                count: state.water.count + 1
+               }
+            };
+             console.log(test)
+            return test;
      
            case 'VEGETATION_INCREMENT':
              return {
-              count: state.count + 20
+                ...state,
+                veg: {
+                    count: state.veg.count + 1
+                   }
              };
            
         
@@ -83,9 +87,9 @@ export default  function AddOnButton() {
     const [state, dispatch] = useReducer(reducer, initialState);
     return (
       <div>
-         <h1> Count: {state.count}</h1>
-        <button onClick={() => dispatch({type: 'WATER_INCREMENT'})} className="water btn"><h2>WATER</h2></button>
-        <button onClick={() => dispatch({type: 'VEGETATION_INCREMENT'})} className="veg btn"><h2>VEGETATION</h2></button>
+        
+        <button onClick={() => dispatch({type: 'WATER_INCREMENT'})} className="water btn"><h2>WATER</h2>{state.water.count}</button>
+        <button onClick={() => dispatch({type: 'VEGETATION_INCREMENT'})} className="veg btn"><h2>VEGETATION</h2>{state.veg.count}</button>
         <button onClick={() => dispatch({type: 'HOUSING_INCREMENT'})} className="housing btn"><h2>HOUSING</h2></button>
         <button onClick={() => dispatch({type: 'DINOS_INCREMENT'})} className="dinos btn"><h2>DINOS</h2></button>
         <button onClick={() => dispatch({type: 'ENERGY_INCREMENT'})} className="energy btn"><h2>ENERGY</h2></button>
