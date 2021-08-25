@@ -1,20 +1,14 @@
-import "../Styles/Store.scss";
 import AddOnButton from "./AddOnButton";
-import RobotCounterContext from "../Contexts/robotCounterContext.jsx"
-import React, { useState, useContext } from "react"
-
-
+import "../Styles/Store.scss";
 
 export default function Store(){
    
-
-
-
-
     return (
         <div className="Store">
-                <AddOnButton />
-
+           
+                <AddOnButton /> 
+                
+         
         </div>
     )
     

@@ -1,8 +1,6 @@
 import React, { useState, useContext } from "react"
-import "../Styles/Map.scss"
 import RobotGenerator from "./RobotGenerator"
-
-// import RobotCounter from "./RobotCounter"
+import "../Styles/Map.scss"
 
 import imgCloud from "../resources/cloud.png"
 
