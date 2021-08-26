@@ -18,7 +18,9 @@ export default  function AddOnButton() {
         dispatch(type);
         setRobotCounter(robotCounter-name.cost)
         console.log(robotCounter)
+        setRpsCounter(()=>rpsCounter + name.rps)
         }
+        
       }
 
 

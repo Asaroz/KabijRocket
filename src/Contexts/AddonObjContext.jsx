@@ -5,7 +5,7 @@ const addonObjects = {
     water: {
        amount: 0,
        rps:1,
-       cost:100,
+       cost:10,
     },
     veg: {
        amount:0,
@@ -58,7 +58,7 @@ function AddonContextProvider(props){
     const reducer = (state, action) => {
         switch (action.type) {
           case 'WATER_INCREMENT':
-           const test = {
+           return {
                 ...state,
                water: {
                  ...state.water,
