@@ -6,6 +6,7 @@ const addonObjects = {
        amount: 0,
        rps:1,
        cost:100,
+
     },
     veg: {
        amount:0,
@@ -63,7 +64,8 @@ function AddonContextProvider(props){
                water: {
                  ...state.water,
                  amount: state.water.amount + 1,
-                 cost: Math.round(state.water.cost *1.1)
+                 cost: Math.round(state.water.cost *1.1) 
+                 
               }
            };
           

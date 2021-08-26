@@ -11,7 +11,6 @@ export default function Map(){
 
                 <RobotGenerator />
                 <img src={imgCloud} className="imgCloud" alt="" />
-                
             <div className="Planet"/>
         </div>
     )
