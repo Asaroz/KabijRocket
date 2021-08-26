@@ -14,9 +14,9 @@ export default function RobotGenerator() {
 
     return (
         <div className="robotGeneratorWrapper">
-            <button onClick={createRobots}>Create Robot</button>
-            <div>Robots: {robotCount}</div>
-            <div>Rps: {rpsCounter}</div>
+            <button onClick={createRobots} className="rocket"></button>
+            <h3>Robots: {robotCount}</h3>
+            <h3>Rps: {rpsCounter}</h3>
         </div>
     )
 
