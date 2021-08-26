@@ -5,13 +5,46 @@ const addonObjects = {
     water: {
        amount: 0,
        rps:1,
-       cost:10,
+       cost:100,
     },
     veg: {
        amount:0,
        rps:4,
-       cost:20,
+       cost:500,
      },
+    house: {
+      amount:0,
+      rps:8,
+      cost: 1000
+    },
+    dinos: {
+      amount: 0,
+      rps: 16,
+      cost: 1500
+    },
+    energy: {
+      amount: 0,
+      rps: 20,
+      cost: 2300
+    },
+    factory: {
+      amount: 0,
+      rps: 30,
+      cost: 3000
+
+    },
+    farming: {
+      amount: 0,
+      rps: 35,
+      cost: 3500
+    },
+
+    mining: {
+      amount: 0,
+      rps: 40,
+      cost: 4000
+
+    },
    };
    
 
@@ -32,7 +65,7 @@ function AddonContextProvider(props){
                  amount: state.water.amount + 1
               }
            };
-           return test;
+          
     
           case 'VEGETATION_INCREMENT':
             return {
@@ -44,44 +77,69 @@ function AddonContextProvider(props){
             };
           
        
-
           case 'HOUSING_INCREMENT':
               return {
-               amount: state.amount + 20
+                ...state,
+                house: {
+                  ...state.house,
+                  amount: state.house.amount + 1
+                }
+               
            };
 
 
           case 'DINOS_INCREMENT':
           return {
-           amount: state.amount + 20
+            ...state,
+           dinos: {
+             ...state.dinos,
+             amount:state.dinos.amount + 1
+           }
+           
           };
              
-          
- 
+           
           case 'ENERGY_INCREMENT':
               return {
-               amount: state.amount + 20
+                ...state,
+                energy: {
+                  ...state.energy,
+                  amount:state.energy.amount + 1
+                }
+              
               };
            
           
  
           case 'FACTORY_INCREMENT':
               return {
-               amount: state.amount + 20
+                ...state,
+                factory: {
+                  ...state.factory,
+                  amount:state.factory.amount + 1
+                }
               };
             
           
  
           case 'FARMING_INCREMENT':
               return {
-               amount: state.amount + 20
+                ...state,
+                farming: {
+                  ...state.farming,
+                  amount:state.farming.amount + 1
+                }
               };
           
           
  
           case 'MINING_INCREMENT':
               return {
-               amount: state.amount + 20
+                ...state,
+                mining: {
+                  ...state.mining,
+                  amount:state.mining.amount + 1
+                }
               };
             default:
             return state;
