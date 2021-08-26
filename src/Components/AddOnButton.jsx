@@ -7,7 +7,6 @@ import imgCloud from "../resources/cloud.png";
 import mountains from "../resources/mountains.png";
 import mines from "../resources/mining.png";
 import water from "../resources/water.png";
-import housing from "../resources/housing.png";
 import dinoButton from "../resources/dinosaur-button.png"
 import farmingButton from "../resources/farming-button.png"
 
@@ -26,8 +25,7 @@ export default  function AddOnButton() {
         setRobotCounter(robotCounter-name.cost)
         console.log(robotCounter)
         setRpsCounter(()=>rpsCounter + name.rps)
-        }
-        
+        } 
       }
 
 
