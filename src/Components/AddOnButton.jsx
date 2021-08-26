@@ -2,6 +2,12 @@ import React, { createContext, useContext, useReducer, useState } from 'react';
 import RobotCounterContext from "../Contexts/robotCounterContext.jsx";
 import RobotPerSecondContext from "../Contexts/robotPerSecondContext.jsx";
 import {addonObjContext} from "../Contexts/AddonObjContext.jsx";
+
+import imgCloud from "../resources/cloud.png";
+import mountains from "../resources/mountains.png";
+import mines from "../resources/mining.png";
+import water from "../resources/water.png";
+import housing from "../resources/housing.png";
 import dinoButton from "../resources/dinosaur-button.png"
 import farmingButton from "../resources/farming-button.png"
 
