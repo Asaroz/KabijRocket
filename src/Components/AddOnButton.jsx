@@ -3,6 +3,13 @@ import RobotCounterContext from "../Contexts/robotCounterContext.jsx";
 import RobotPerSecondContext from "../Contexts/robotPerSecondContext.jsx";
 import {addonObjContext} from "../Contexts/AddonObjContext.jsx";
 
+import imgCloud from "../resources/cloud.png";
+import mountains from "../resources/mountains.png";
+import mines from "../resources/mining.png";
+import water from "../resources/water.png";
+import housing from "../resources/housing.png";
+
+
 
 
 export default  function AddOnButton() {
