@@ -60,7 +60,7 @@ const addonObjects = {
       amount: 0,
       rps: 40,
       cost: 40,
-      imgSrc: [pickaxe]
+      imgSrc: [pickaxe ]
 
     },
    };
