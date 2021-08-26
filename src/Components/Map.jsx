@@ -3,10 +3,9 @@ import RobotGenerator from "./RobotGenerator";
 import {addonObjContext} from "../Contexts/AddonObjContext.jsx";
 import "../Styles/Map.scss";
 
-// import cloud from "../resources/cloud.png";
+
 import mountains from "../resources/mountains3.png";
-import farm from "../resources/farming-button.png";
-import mine from "../resources/mining.png";
+
 
 export default function Map(){
     const  [state] = useContext(addonObjContext)
