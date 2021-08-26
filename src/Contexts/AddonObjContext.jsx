@@ -1,4 +1,14 @@
 import React,{useReducer} from "react";
+import cloud from "../resources/cloud2.png";
+import water from "../resources/water2.png";
+import forest from "../resources/Forest.png";
+import tippi from "../resources/tippi.png";
+import skyscrapers from "../resources/skyscrapers.png";
+import dinos from "../resources/dinosaur-button.png";
+import windmill from "../resources/windmill_faster.gif";
+import fabric from "../resources/fabric.png";
+import farm from "../resources/farming-button.png";
+import pickaxe from "../resources/mining.png";
 
 const addonObjects = {
 
@@ -6,43 +16,51 @@ const addonObjects = {
        amount: 0,
        rps:1,
        cost:10,
+       imgSrc: [cloud, water]
     },
     veg: {
        amount:0,
        rps:4,
-       cost:500,
+       cost:50,
+       imgSrc: [forest]
      },
     house: {
       amount:0,
       rps:8,
-      cost: 1000
+      cost: 10,
+      imgSrc: [tippi, skyscrapers ]
     },
     dinos: {
       amount: 0,
       rps: 16,
-      cost: 1500
+      cost: 15,
+      imgSrc: [dinos]
     },
     energy: {
       amount: 0,
       rps: 20,
-      cost: 2300
+      cost: 23,
+      imgSrc: [windmill]
     },
     factory: {
       amount: 0,
       rps: 30,
-      cost: 3000
+      cost: 30,
+      imgSrc: [fabric]
 
     },
     farming: {
       amount: 0,
       rps: 35,
-      cost: 3500
+      cost: 35,
+      imgSrc: [farm]
     },
 
     mining: {
       amount: 0,
       rps: 40,
-      cost: 4000
+      cost: 40,
+      imgSrc: [pickaxe]
 
     },
    };
@@ -62,8 +80,10 @@ function AddonContextProvider(props){
                 ...state,
                water: {
                  ...state.water,
-                 amount: state.water.amount + 1
-              }
+                 amount: state.water.amount + 1,
+                 
+                   
+            }
            };
           
     
