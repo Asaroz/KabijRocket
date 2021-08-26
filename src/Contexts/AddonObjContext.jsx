@@ -5,7 +5,7 @@ const addonObjects = {
     water: {
        amount: 0,
        rps:1,
-       cost:10,
+       cost:100,
     },
     veg: {
        amount:0,
@@ -62,7 +62,8 @@ function AddonContextProvider(props){
                 ...state,
                water: {
                  ...state.water,
-                 amount: state.water.amount + 1
+                 amount: state.water.amount + 1,
+                 cost: Math.round(state.water.cost *1.1)
               }
            };
           
@@ -72,7 +73,8 @@ function AddonContextProvider(props){
                ...state,
                veg: {
                  ...state.veg,
-                 amount: state.veg.amount + 1
+                 amount: state.veg.amount + 1,
+                 cost: Math.round(state.veg.cost *1.1)
                   }
             };
           
@@ -82,7 +84,8 @@ function AddonContextProvider(props){
                 ...state,
                 house: {
                   ...state.house,
-                  amount: state.house.amount + 1
+                  amount: state.house.amount + 1,
+                  cost: Math.round(state.house.cost *1.1)
                 }
                
            };
@@ -93,7 +96,8 @@ function AddonContextProvider(props){
             ...state,
            dinos: {
              ...state.dinos,
-             amount:state.dinos.amount + 1
+             amount:state.dinos.amount + 1,
+             cost: Math.round(state.dinos.cost *1.1)
            }
            
           };
@@ -104,7 +108,8 @@ function AddonContextProvider(props){
                 ...state,
                 energy: {
                   ...state.energy,
-                  amount:state.energy.amount + 1
+                  amount:state.energy.amount + 1,
+                  cost: Math.round(state.energy.cost *1.1)
                 }
               
               };
@@ -116,7 +121,8 @@ function AddonContextProvider(props){
                 ...state,
                 factory: {
                   ...state.factory,
-                  amount:state.factory.amount + 1
+                  amount:state.factory.amount + 1,
+                  cost: Math.round(state.factory.cost *1.1)
                 }
               };
             
@@ -127,7 +133,8 @@ function AddonContextProvider(props){
                 ...state,
                 farming: {
                   ...state.farming,
-                  amount:state.farming.amount + 1
+                  amount:state.farming.amount + 1,
+                  cost: Math.round(state.farming.cost *1.1)
                 }
               };
           
@@ -138,7 +145,8 @@ function AddonContextProvider(props){
                 ...state,
                 mining: {
                   ...state.mining,
-                  amount:state.mining.amount + 1
+                  amount:state.mining.amount + 1,
+                  cost: Math.round(state.mining.cost *1.1)
                 }
               };
             default:

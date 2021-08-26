@@ -28,7 +28,7 @@ export default  function AddOnButton() {
     return (
       <div>
         
-        <button onClick={() => Click({type: 'WATER_INCREMENT'},state.water)} className="water btn"><h2>WATER</h2>{state.water.amount}</button>
+        <button onClick={() => Click({type: 'WATER_INCREMENT'},state.water)} className="water btn"><h2>WATER</h2>{state.water.amount} costs:{state.water.cost}</button>
         <button onClick={() => Click({type: 'VEGETATION_INCREMENT'},state.veg)} className="veg btn"><h2>VEGETATION</h2>{state.veg.amount}</button>
         <button onClick={() => Click({type: 'HOUSING_INCREMENT'},state.house)} className="housing btn"><h2>HOUSING</h2>{state.house.amount}</button>
         <button onClick={() => Click({type: 'DINOS_INCREMENT'},state.dinos)} className="dinos btn"><h2>DINOS</h2>{state.dinos.amount}</button>
