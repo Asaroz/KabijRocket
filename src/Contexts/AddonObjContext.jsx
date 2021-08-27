@@ -1,6 +1,6 @@
 import React,{useReducer} from "react";
-import cloud from "../resources/cloud2.png";
-import water from "../resources/water2.png";
+import cloud from "../resources/cloud_rain.png";
+import river from "../resources/river.png";
 import forest from "../resources/Forest.png";
 import tippi from "../resources/tippi.png";
 import skyscrapers from "../resources/skyscrapers.png";
@@ -16,7 +16,7 @@ const addonObjects = {
        amount: 0,
        rps:1,
        cost:10,
-       imgSrc: [cloud, water]
+       imgSrc: [cloud, river]
     },
     veg: {
        amount:0,

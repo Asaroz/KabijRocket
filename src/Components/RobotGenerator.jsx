@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import robotCounterContext from "../Contexts/robotCounterContext.jsx"
 import rpsContext from "../Contexts/robotPerSecondContext"
+import "../Styles/Map.scss";
+import robot from "../resources/robot.png" 
 
 export default function RobotGenerator() {
     const robotCounter = useContext(robotCounterContext)
@@ -14,9 +16,19 @@ export default function RobotGenerator() {
 
     return (
         <div className="robotGeneratorWrapper">
-            <button onClick={createRobots} className="rocket"></button>
-            <h3>Robots: {robotCount}</h3>
-            <h3>Rps: {rpsCounter}</h3>
+           
+            <button onClick={createRobots} className="rocket">
+                 
+            </button> 
+            <img src={robot} className="robot"/>
+            <div className="counter">
+                <h3>Robots: {robotCount}</h3>
+                <h3>Rps: {rpsCounter}</h3>
+                
+            </div>
+            
+            
+                
         </div>
     )
 
