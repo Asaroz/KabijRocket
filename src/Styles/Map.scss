@@ -26,8 +26,8 @@
     .robot {
         animation: robotMover 2s infinite  alternate;
         @keyframes robotMover {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-20px); }
+            0% { transform: translateX(30px); }
+            100% { transform: translateX(-30px); }
         }
     }
 
