@@ -6,10 +6,8 @@
     
     
     .robotGeneratorWrapper {
-        // background-image: url("../resources/rocket.png");
         height: 25%;
-        width: 7%;
-        // background-repeat: no-repeat;
+        width: 30%;
         position: absolute;
         left: 45%;
         top: 50%;
@@ -19,6 +17,20 @@
         }
 
     }
+
+    .counter {
+        width: 30%;
+        color: white;
+    }
+    
+    .robot {
+        animation: robotMover 2s infinite  alternate;
+        @keyframes robotMover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+    }
+
     .rocket {
         border: none;
         width: 100%;
@@ -31,26 +43,58 @@
     .rocket:hover {
             cursor: pointer;
         }
-
+       
+        
     .rocket:active {
             width: 100%;
             height: 100%;
             background: url("../resources/rocket1.png"); 
             background-repeat: no-repeat;
+            animation: rocketMover 0.5s infinite  alternate;
+            
+            
+            @keyframes rocketMover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
     }
 
-    .cloud {
-        width: 10%;
-        height: 10%;
-        z-index: 1;
-        position: fixed;
-        top: 8%;
-        left: 10%;
-    }
-    .planet {
+    .planetBrown {
         height: 200%;
         width:  200%;
         background: linear-gradient(to left, #af6d02, #93291e);
+        position: fixed;
+        border-radius: 60%;
+        z-index: 0;
+        top: 200px;
+        right: 50px;
+    }   
+    .planetPartlyGreen {
+        height: 200%;
+        width:  200%;
+        background: linear-gradient(to left, #a38b05, #286914);
+        position: fixed;
+        border-radius: 60%;
+        z-index: 0;
+        top: 200px;
+        right: 50px;
+    }   
+
+    .planetTotalGreen {
+        height: 200%;
+        width:  200%;
+        background: linear-gradient(to left, #08e62d, #093b02, #08e62d);
+        position: fixed;
+        border-radius: 60%;
+        z-index: 0;
+        top: 200px;
+        right: 50px;
+    }   
+
+    .planetGlobalWarming {
+        height: 200%;
+        width:  200%;
+        background: linear-gradient(to left, #d45906, #93291e);
         position: fixed;
         border-radius: 60%;
         z-index: 0;
@@ -66,9 +110,19 @@
         left: 5%;
 
     }
-    .water {
+
+    .cloud {
+        width: 10%;
+        height: auto;
+        z-index: 1;
+        position: fixed;
+        top: 4%;
+        left: 30%;
+    }
+
+    .river {
         width: 20%;
-        height: 45%;
+        height: 50%;
         z-index: 2;
         position: fixed;
         top: 39%;
@@ -134,8 +188,8 @@
     .farm {
         position: fixed;
         height: 15%;
-        top: 40%;
-        left: 5%;
+        top: 80%;
+        left: 2%;
         z-index: 3;
     }
 }
