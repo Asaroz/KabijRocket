@@ -63,36 +63,28 @@ export default function Map(){
                {robotCount >= 0 &&
                 <div className= "planetBrown">
              
-              <img src={mountains} className="mountains" alt="" />
-             
               </div> 
               }
 
                {robotCount >= 100 &&
                 <div className= "planetPartlyGreen">
              
-              <img src={mountains} className="mountains" alt="" />
-             
              </div> 
              }
 
              {robotCount >= 1000 &&
                 <div className= "planetTotalGreen">
-             
-              <img src={mountains} className="mountains" alt="" />
-             
+            
              </div> 
              }
 
              {robotCount >= 50000 &&
                 <div className= "planetGlobalWarming">
              
-              <img src={mountains} className="mountains" alt="" />
-             
              </div> 
              }
-
-            </div>
+            <img src={mountains} className="mountains" alt="" />
+      </div>
            
     )
     
